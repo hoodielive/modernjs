@@ -1,2 +1,0 @@
-# modernjs
-Modern Javascript
