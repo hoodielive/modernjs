@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Something</title>
+    <script src="es6-module-loader-dev.js"> </script>
+    <script>
+      System.paths.babel = "browser.min.js";
+      System.transpiler = "babel"; 
+    </script>
+    <script type="module">
+      import {Person} from './private-person.js';
+
+      let person = new Person('Jon', 'Doe')
+
+      alert(person.greet('Johnny-B'))
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
