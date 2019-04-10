@@ -8,7 +8,6 @@ Person.prototype.greet = function(name) {
 }
 
 let obj = new Person('King', 'Immortalis')
-
 let obj2 = new Person('King', 'Decroid')
 
 console.log(obj,obj2)
