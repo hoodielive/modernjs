@@ -1,0 +1,13 @@
+React.createElement(/* type */, /* prop */, /* content */) 
+
+Breakdown:
+type -> either a string or a React Component
+	this can be a string of any existing html element ('e.g. 'p','span','header') or you could pass 
+	a React Component (jsx). 
+
+props -> either null or an object 
+	This is an object of HTML attributes and custom data about the element. 
+
+content -> null, a string, a React Element, or a React Component 
+	Anything that you pass here will be the content of the rendered element. This can include plain text, 
+	javascript code, other React elements, etc. 
