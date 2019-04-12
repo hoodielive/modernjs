@@ -20,7 +20,6 @@ const element = React.createElement('div', null,
 	React.createElement('span', null, 'hello')
 )
 
-
 // Create a list of people
 const element = React.createElement('ol', null, 
 	React.createElement('li', null, 'King Sanchez'),
@@ -29,3 +28,62 @@ const element = React.createElement('ol', null,
 	React.createElement('li', null, 'King Solomon')
 )
 
+// array of elements 
+
+const people = [
+	{ name: 'osepeka' }, 
+	{ name: 'danudae' }, 
+	{ name: 'pursuun' } 
+}
+
+const element = React.createElement('ol', null, 
+	people.map((person) => ( 
+		React.createElement('li', { key: person.name}, person.name)
+	))
+)
+
+
+HTML 
+<header>
+  <h1>React</h1>
+</header>
+
+JS
+'h1'
+'React'
+
+JSX
+<h1>
+  React
+</h1>
+
+
+Re-create the list of people using JSX instead of the React.createElement class method
+
+const element = <ol>
+  <li>{people[0].name}</li>
+</ol>
+
+or 
+
+const element = <ol>
+  {people.map((person)) => (
+    <li key={person.name}>{person.name}</li>
+  ))}
+</ol>
+
+Components
+class ContactList extends React.Component { 
+  render() {
+    return <ol>
+      {people.map((person)) => (
+        <li key={person.name}>{person.name}</li>
+      ))}
+  }
+</ol>
+}
+
+ReactDOM.render(
+  <ContactList />,
+  document.getElementById('root')
+)
