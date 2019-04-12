@@ -1,0 +1,12 @@
+State Management Intro 
+
+Props 
+Allow you to pass data into your components.
+
+Functional Components 
+An alternative, and probably more intuitive approach to creating components.
+
+Controlled Components 
+Allow you to hook up the forms in your application to your component state.
+
+
