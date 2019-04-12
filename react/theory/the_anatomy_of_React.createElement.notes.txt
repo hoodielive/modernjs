@@ -11,3 +11,21 @@ props -> either null or an object
 content -> null, a string, a React Element, or a React Component 
 	Anything that you pass here will be the content of the rendered element. This can include plain text, 
 	javascript code, other React elements, etc. 
+
+const element = React.createElement('div', null, "some string") 
+
+or
+
+const element = React.createElement('div', null, 
+	React.createElement('span', null, 'hello')
+)
+
+
+// Create a list of people
+const element = React.createElement('ol', null, 
+	React.createElement('li', null, 'King Sanchez'),
+	React.createElement('li', null, 'King Spivey'),
+	React.createElement('li', null, 'King Steed'),
+	React.createElement('li', null, 'King Solomon')
+)
+
