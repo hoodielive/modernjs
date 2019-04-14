@@ -9,4 +9,6 @@ An alternative, and probably more intuitive approach to creating components.
 Controlled Components 
 Allow you to hook up the forms in your application to your component state.
 
+Functions should have -- [ 1 purpose/action ] --
+
 
