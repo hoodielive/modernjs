@@ -2,16 +2,16 @@ import React, { Compoent } from 'react';
 
 class ContactList extends React.Component {
   render() {
-    return(
-      <ol>  
-        
+    const people = this.props.contacts
+
+    return <ol>  
+      { people.map(( person ) => (
+        <li key={person.name}>  
+      ))}    
       </ol>
-    )}
+    }
 }
 
-class App extends ContactList { 
-
-
-}
 
 export default App;
+
