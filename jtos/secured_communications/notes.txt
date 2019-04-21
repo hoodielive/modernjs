@@ -1,0 +1,28 @@
+Symmetrical Encryption -> 
+	Communication is based upon a single key that encrypts and decrypts communication / packets.
+
+Key Exchange Algorithm -> 
+	The key is never transmitted to any other host, rather it utilizes public calculations to
+	To decrypt packets (mathematical computation). 
+
+Asymmetrical Encryption -> 
+	Used 2 separate keys for encryption and decryption.
+	Public keys.
+	Private keys.
+	Together they form public/private key pair.
+	Share the public key to anyone, the private key will be used to decrypt after authentication.
+
+Difiie Hellman Key Exchange -> 
+	A mathematical algorithm that generates a little from both private and public to encrypt and decrypt packets.
+
+Hashing -> 
+	Bcrypt
+
+Process
+1. Diffie-Hellman Key Change.
+2. Arrive at Symmetric Key.
+3. Hashing to make sure there has not been tampering.
+4. Authenticate user. 
+
+ssh-keygen -t rsa -b 4096 -C "<>" -f ~/.ssh/some_key : This will generate a private and public key. The indicator for the publick key is .pub. The other is the private key and should NOT be shared with anyone. 
+pbcopy < ~/.ssh/some_key
