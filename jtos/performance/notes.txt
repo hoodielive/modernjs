@@ -1,0 +1,8 @@
+Dont make me think..
+
+Your visitors expect your site to load within 2 secs. 
+
+Don't write code that loads 5mb files and other kinds of things that slow performance!
+
+GET /somethingsuperfast
+
