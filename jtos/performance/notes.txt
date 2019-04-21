@@ -7,3 +7,17 @@ Don't write code that loads 5mb files and other kinds of things that slow perfor
 GET /somethingsuperfast
 
 Frontend | Backend
+
+Frontend -> 
+- Critical Render path (html,css,js) 
+- Optimized Code 
+- Progressive Web App
+- Minimize Files 
+- Minimize Delievery 
+
+Backend -> 
+- CDN(s) 
+- Caching 
+- Load Balancing 
+- DB scaling 
+- Gzip Compression
