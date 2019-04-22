@@ -1,0 +1,54 @@
+Dont make me think..
+
+Your visitors expect your site to load within 2 secs. 
+
+Don't write code that loads 5mb files and other kinds of things that slow performance!
+
+GET /somethingsuperfast
+
+Frontend | Backend
+
+Frontend -> 
+- Critical Render path (html,css,js) 
+- Optimized Code 
+- Progressive Web App
+- Minimize Files 
+- Minimize Delievery 
+
+Backend -> 
+- CDN(s) 
+- Caching 
+- Load Balancing 
+- DB scaling 
+- Gzip Compression
+
+Formula/Algorithm:
+Honey I shrunk the files.. 
+The traveling delivery man.. 
+
+Reduce the file size: 
+- Minimize Text - minifier, uglify, remove space
+- Minimize Images - svg, jpg, gif, png - always pick the 'right' image file formats that works 
+	
+	How to optimize them:
+		jpegs - use for things with many colors | doesn't allow transparency | big file sizes
+		gifs - limits the total colors 2 > 256 | reduction of color count is good for automation 
+		pngs - limit colors | very small | excellent for logos and transparency 
+		svg - vector graphics - files designers work with on indesign, sketch | can expand several times and still be
+			clear and crisp | incredibly small | great for retina and 4k and can be customized for CSS. 
+			Simplistic 
+
+Miminizing Images Techniques: 
+ - If you want transparency: PNG
+ - If you want animations: GIF
+ - If you want colorful images: JPG
+ - If you want simple icons, logos and illustrations: SVGs 
+ - Reduce PNG with: TinyPNG
+ - Reduce JPG with JPEG-optimizer
+ - Try to choose simple illustrations over highly detailed photographs
+ - Always lower JPEG image quality (30-60%) 
+ - Resize image based on size it will be displayed
+ - Display different sized images for different backgrounds
+ - Use CDNs like imigx
+ - Remove image metadata
+
