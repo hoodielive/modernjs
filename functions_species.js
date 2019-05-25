@@ -1,8 +1,8 @@
 function sayHowdy(name) {
     let upperCaseName = name.toUpperCase(); 
-    return 'Welcome Mr. ' + name; 
+    return console.log('Welcome Mr. ' + upperCaseName)
 }
 
 let yourName = 'solomon';
 
-console.log(sayHowdy(yourName));
+sayHowdy(yourName);
