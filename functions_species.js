@@ -3,6 +3,6 @@ function sayHowdy(name) {
     return 'Welcome Mr. ' + name; 
 }
 
-let yourName = 'Solomon';
+let yourName = 'solomon';
 
-sayHowdy(yourName);
+console.log(sayHowdy(yourName));
