@@ -28,5 +28,3 @@ class BeClassy {
 }
 const car1 = new Car('toyota', 'corolla', 1993)
 console.log(car1.getCarInfo()) 
-
-const 
