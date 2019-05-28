@@ -6,7 +6,6 @@ let cluster = {
   location: 'Orun, Aye'
 }
 
-// let { name, handle, location } = user; 
 // get the results by destructing the invocation 
 function getUser() {
   return {
