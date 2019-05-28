@@ -1,12 +1,5 @@
 let user = {} 
 
-//user.name = 'Larry Cooldude'
-//user.handle = '@coolhandle'
-//user.location = 'Egungun, Onibode'
-//
-//let name = user.name; 
-//let handle = user.handle; 
-
 let cluster = {
   name: 'Awotunde',
   handle: '@egunawo33', 
@@ -14,7 +7,6 @@ let cluster = {
 }
 
 // let { name, handle, location } = user; 
-
 // get the results by destructing the invocation 
 function getUser() {
   return {
@@ -25,5 +17,13 @@ function getUser() {
 }
 
 let { name, handle, location } = getUser(); 
-// console.log(name, handle, location)
 
+function returnSelection( name, handle, location='Philly') {
+  return {
+    name,
+    handle,
+    location
+  }
+}
+
+console.log(returnSelection(getUser().name, getUser().handle))
