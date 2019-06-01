@@ -27,7 +27,7 @@ function returnSelection( name, handle, location='Philly') {
 
 console.log(returnSelection(getUser().name, getUser().handle))
 
-const odu = { 
+function returnOri( name, incarnationOf, description ) { 
   return {
     name, 
     incarnationOf,
