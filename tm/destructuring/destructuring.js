@@ -26,3 +26,11 @@ function returnSelection( name, handle, location='Philly') {
 }
 
 console.log(returnSelection(getUser().name, getUser().handle))
+
+const odu = { 
+  return {
+    name, 
+    incarnationOf,
+    description
+  }
+}
