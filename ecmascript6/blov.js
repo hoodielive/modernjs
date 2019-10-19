@@ -4,4 +4,5 @@ function getValue()
 
 	return value;
 }
+
 console.log(getValue());
