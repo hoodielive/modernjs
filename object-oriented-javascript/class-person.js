@@ -8,7 +8,6 @@ class Person {
   }
 }
 
-
 class NewPerson extends Person
 {
   super(firstname, age)
