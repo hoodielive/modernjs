@@ -7,6 +7,9 @@ function getUser() {
 }
 
 var { name, handle, location } = getUser()
-console.log(name)
-console.log(handle)
-console.log(location)
+
+var csv = "2019, RangeRover, Sport, Buy"
+
+var [ year, make, model, description ] = csv.split(',')
+
+console.log(csv.split(','))
