@@ -13,8 +13,7 @@ function getUserData (player) {
 	return Promise.all([
 		getProfile(player),
 		getRepose(player)
-	]).then(function (data) {
-		var [ profile, repos ] = data;
+	]).then(function ([ profile, repos ]) {
 		return {
 			profile: profile,
 			repos: repos
