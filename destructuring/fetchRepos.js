@@ -13,10 +13,5 @@ function getUserData (player) {
 	return Promise.all([
 		getProfile(player),
 		getRepose(player)
-	]).then(function ([ profile, repos ]) {
-		return {
-			profile: profile,
-			repos: repos
-		}
-	})
-}
+	]).then(([ profile, repos ]) => ({ profile, repos })
+)}
