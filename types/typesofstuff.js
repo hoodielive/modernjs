@@ -24,4 +24,3 @@ console.log(typeof obj)
 console.log(typeof asymbol)
 console.log(typeof diamondIntheRough)
 console.log(typeof Forget)
-
