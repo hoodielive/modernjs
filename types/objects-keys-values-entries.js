@@ -9,6 +9,9 @@ const runStat = {
 }
 
 console.log(Object.keys(runStat))
+
 console.log(Object.keys(runStat.time))
+
 console.log(Object.values(runStat.time))
+
 console.log(Object.entries(runStat.time))
