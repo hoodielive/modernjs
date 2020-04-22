@@ -1,6 +1,4 @@
-function identity(n) {
-	return n; 
-}
+function identity(n) {return n;}
 
 console.assert(identity(42) == 42)
 console.assert((typeof identity) == 'function')
@@ -32,4 +30,3 @@ const result = nums
 	.reduce(function(acc, n) {
 		return acc + n;
 	}, 0);
-				
