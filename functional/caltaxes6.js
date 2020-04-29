@@ -1,6 +1,6 @@
-let percentValue = 5; 
+let percentValue = 5;
 
-// let calculateFiction = (value) => { return value/100 * (100 + percentValue) } 
+// let calculateFiction = (value) => { return value/100 * (100 + percentValue) }
 
 let calculateFiction = (value, percentValue) => { return value/100 * (100 + percentValue) }
 
