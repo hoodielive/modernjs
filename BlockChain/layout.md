@@ -9,3 +9,7 @@
 4. Build network consensus algorithm.
 
 5. Build block explorer application.
+
+# Terms
+
+1. A blockchain - an immutable, distributed ledger.
