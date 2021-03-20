@@ -12,5 +12,4 @@ class Blockchain {
 		this.chain = [];
 		this.newTransactions = [];
 	}
-	//... 
 }
