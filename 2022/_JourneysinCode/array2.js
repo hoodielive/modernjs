@@ -67,3 +67,23 @@ for (let name of uniqueNames)
 {
   log(name)
 }
+
+const map = new Map()
+  .set('abc', 1)
+  .set('def', 2)
+
+for (const iteration of map)
+{
+  log(iteration)
+}
+
+for (const [key, value] of map)
+{
+  log(key + ' is mapped to ' + value)
+}
+
+const someObject = { name: 'Mike' }
+for (let key of Object.keys(someObject))
+{
+  log(`${key}: ${someObject[key]}`);
+}
