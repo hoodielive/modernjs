@@ -1,4 +1,5 @@
 // Javascript Types
+let log = console.log
 
 // Numbers
 a = 3; // integer

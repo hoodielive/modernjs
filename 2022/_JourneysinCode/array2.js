@@ -87,3 +87,32 @@ for (let key of Object.keys(someObject))
 {
   log(`${key}: ${someObject[key]}`);
 }
+
+let object = {
+  "a": "foo",
+  "b": "bar",
+  "c": "baz",
+};
+
+Object.defineProperty(object, 'a', {
+  enumerable: false,
+});
+
+for (var key in object)
+{
+  if (object.hasOwnProperty(key))
+  {
+    log(`object. ${key}, ${object[key]}`)
+  }
+}
+ 
+
+for (let i = 0; i < 5; i++)
+{
+  nextLoop2Iteration:
+  for (let j = 0; j < 5; j++)
+  {
+    if (i == j) break nextLoop2Iteration;
+    log(i, j);
+  }
+}
