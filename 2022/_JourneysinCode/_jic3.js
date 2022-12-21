@@ -4,9 +4,9 @@
   * Expressions are evaluated to produce a value, but statements are executed to make something happen.
   * 
   *
-  */
+*/
 
-  let log = console.log
+let log = console.log
 
 let arr = ['a', 'b', 'c', 'd', 'e', 'f']
 log(arr.slice(2))
@@ -93,6 +93,28 @@ for (const [i, movement] of movements.entries())
     log(`Movement ${i + 1}: You withdrew ${Math.abs(movement)}`)
   }
 }
+
+// Maps and Sets with forEach
+
+const currencies = new Map([
+  ['USD', 'United States Dollar'],
+  ['EUR', 'EUR'],
+  ['GBP', 'Pound Sterling'],
+])
+
+currencies.forEach(function(value, key, map) 
+{
+  log(`${key}: ${value}`) 
+})
+
+// Pass an iterable to Set
+const currenciesUnique = new Set(['USD', 'GBP', 'USD', 'EUR', 'EUR'])
+log(currenciesUnique);
+currenciesUnique.forEach(function(value, _, map)
+{
+  // Sets don't have keys.
+  log(`${value}: ${value}`) 
+})
 
 // Control Statements
 if (arr.at(1) === 'b')
