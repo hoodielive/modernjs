@@ -19,6 +19,12 @@ let sums = a => a;
 
 console.log(sums(4));
 
+let a = '\new territory'
+let b = "\new territory"
+
+console.log(a)
+console.log(b)
+
 let ball = function(x, y, vx, vy ) 
 {
     this.x = x; 
@@ -35,5 +41,3 @@ let ball = function(x, y, vx, vy )
 }
 
 let baller = new ball(0, 0, 10000, 10000);
-
-console.log(baller);
