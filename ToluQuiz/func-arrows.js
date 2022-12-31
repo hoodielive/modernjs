@@ -7,11 +7,11 @@
 const log = console.log
 
 let isReady = true;
-let ishealthy = false;
-let isAdaptable = false;
-let isMentallySound = false;
-let canAfford = false;
-let isVisited = false;
+let isHealthy = true;
+let isAdaptable = true;
+let isMentallySound = true;
+let canAfford = true;
+let isVisited = true;
 
 let assessPreparedness = (client) =>
 {
@@ -19,11 +19,35 @@ let assessPreparedness = (client) =>
     {
         isReady = false;
     }
-    else if (client)
+
+    if (client)
     {
         isReady = true;
     }
-    return isReady;
+
+    if (isReady)
+    {
+        if (isHealthy)
+        {
+            if (isMentallySound)
+            {
+                if (isVisited)
+                {
+                    if (canAfford)
+                    {
+                        if (isAdaptable)
+                        {
+                            return "You are ready!"
+                        }
+                        else 
+                        {
+                            return "I am sorry, you are not ready."
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 log(assessPreparedness("Tolu"));
