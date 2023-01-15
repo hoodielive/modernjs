@@ -9,35 +9,3 @@ function UiComponent()
         this.handleClick();
     })
 }
-
-var sum = function(a, b) {
-    return a + b;
-}
-console.log(sum(2, 3));
-
-let sums = a => a;
-
-console.log(sums(4));
-
-let a = '\new territory'
-let b = "\new territory"
-
-console.log(a)
-console.log(b)
-
-let ball = function(x, y, vx, vy ) 
-{
-    this.x = x; 
-    this.y = y;
-    this.vx = vx;
-    this.vy = vy;
-    this.dt = 25;
-
-    setInterval(() =>  {
-        this.x += vx;
-        this.y += vy;
-        console.log(this.x, this.y);
-    }, this.dt);
-}
-
-let baller = new ball(0, 0, 10000, 10000);
