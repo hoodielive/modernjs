@@ -1,4 +1,3 @@
-
 import  axios  from 'axios';
 
 const log = console.log
@@ -12,7 +11,7 @@ interface Todo {
 }
 
 // Receive a promise (async)
-axios.get(url).then(response => {
+axios.get(url) .then(response => {
  
   // Response.data has properties of:
   // id
@@ -21,15 +20,18 @@ axios.get(url).then(response => {
   
   const todo = response.data as Todo;
   
-  const ID = todo.ID;
-  const title = todo.Title;
-  const finished = todo.finished;
+  const id = todo.id;
+  const title = todo.title;
+  const completed = todo.completed;
 
-
-  log(`
-      The todo with ID: ${ID}
-      Has a title of: ${title}
-      Is it finished? ${finished}
-     `)
+  logTodo(id, title, completed);
 });
 
+
+const logTodo = (id: number, title: string, completed: boolean) => {
+  log(`
+      The todo with ID: ${id}
+      Has a title of: ${title}
+      Is it finished? ${completed}
+     `)
+};
