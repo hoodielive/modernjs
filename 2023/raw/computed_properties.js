@@ -25,5 +25,7 @@ function getEnvelope(type, description)
   }
 }
 
-log(getEnvelope('Ajogun', 'Iku'))
-
+getEnvelope.data = {
+  girl: 'Love'
+}
+log(getEnvelope('Ajogun', 'Iku'), getEnvelope.data)
