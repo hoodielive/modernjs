@@ -1,5 +1,5 @@
 const log = console.log
-const promise = fetch('books.json')
+const promise = fetch('https://jsonplaceholder.typicode.com/todos/1')
 
 // add fulfillment and rejection handler
 promise.then(
