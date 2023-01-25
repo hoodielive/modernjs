@@ -4,7 +4,7 @@ function returnAFunction() {
     let count = 0;
     return function counter()
     {
-        log(count++)
+        return log(count++)
     }
 }
 
