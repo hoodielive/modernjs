@@ -26,5 +26,5 @@ function makeFunctions() {
   }
 }
 
-
+// Yes but implement!
 log(makeFunctions());
