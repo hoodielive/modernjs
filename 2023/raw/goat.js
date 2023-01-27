@@ -1,3 +1,4 @@
+const log = console.log
 function User(name, passwordHash) {
   let self = this instanceof User 
   ? this
@@ -15,3 +16,5 @@ if (typeof Object.create === 'undefined') {
     return new C();
   }
 }
+
+log(User('Larry', 'afjsdklfjasklfjasdlkfweiourwklasjvsdkljfsdlfkjsd'))
