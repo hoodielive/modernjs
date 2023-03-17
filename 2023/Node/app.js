@@ -1,15 +1,15 @@
-const fs = require('fs')
+const http = require('http')
 
-fs.readFile('/tmp/hello.txt', { encoding: 'utf8'}, (err, content) => {
-  if (err) return console.error(err)
+const hostname = '127.0.0.1'
 
-  // No error occurred, content is a string
-  console.log(content);
+const port = 8080
+
+const server = http.createServer((req, res) => {
+  res.statusCode = 200
+  res.setHeader('Content-Type', 'text/plain')
+  res.end('Hello Enochian')
 })
 
-
-fs.readFile('binary', (err, binaryContent) => {
-  if (err) console.error(err);
-
-  console.log(content.toString('hex'));
+server.listen(port, hostname, () =>  {
+  console.log(`Server is running on port http://${hostname}:${port}/`)
 })
